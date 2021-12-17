@@ -11,52 +11,62 @@
 9-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:24:5-67
-11-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:24:22-64
+11-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:5:5-23:19
+13-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:7:5-30:19
 14        android:allowBackup="true"
-14-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:6:9-35
+14-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.5.0] /Users/Monsef/.gradle/caches/transforms-2/files-2.1/1602505273d43f41d2f450ba7fa6ad4f/core-1.5.0/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:7:9-43
+17-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:8:9-41
+18-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:9:9-54
+19-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:10:9-35
+20-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.LetsGo" >
-22-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:11:9-44
-23        <activity android:name="com.example.letsgo.Annonces" />
-23-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:12:9-55
-23-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:12:19-43
-24        <activity
-24-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:13:9-15:53
-25            android:name="com.example.letsgo.DetailsAnnonce"
-25-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:13:19-49
-26            android:label="Details Annonce"
-26-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:14:13-44
-27            android:parentActivityName="com.example.letsgo.Annonces" />
-27-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:15:13-51
-28        <activity android:name="com.example.letsgo.MainActivity" >
-28-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:16:9-22:20
-28-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:16:19-47
-29            <intent-filter>
-29-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:17:13-21:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:18:17-69
-30-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:18:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:20:17-77
-32-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:20:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+22-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:13:9-44
+23        <activity android:name="com.example.letsgo.ShowAllAnnonces" />
+23-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:14:9-62
+23-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:14:19-50
+24        <!-- <activity android:name=".listAnnonces" /> -->
+25        <activity android:name="com.example.letsgo.Annonces" />
+25-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:16:9-46
+25-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:16:19-43
+26        <activity android:name="com.example.letsgo.AddAnnonce" />
+26-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:17:9-57
+26-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:17:19-45
+27        <activity android:name="com.example.letsgo.RegisterForm" />
+27-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:18:9-59
+27-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:18:19-47
+28        <activity
+28-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:19:9-22:54
+29            android:name="com.example.letsgo.DetailsAnnonce"
+29-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:20:13-43
+30            android:label="Details Annonce"
+30-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:21:13-44
+31            android:parentActivityName="com.example.letsgo.Annonces" />
+31-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:22:13-51
+32        <activity android:name="com.example.letsgo.MainActivity" >
+32-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:23:9-29:20
+32-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:23:19-47
+33            <intent-filter>
+33-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:25:17-69
+34-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:27:17-77
+36-->/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>
