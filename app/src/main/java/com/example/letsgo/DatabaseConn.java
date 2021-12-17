@@ -9,10 +9,10 @@ public class DatabaseConn {
 
     Connection conn;
 
-    public DatabaseConn(){
+     public DatabaseConn(){
         try{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11456083","sql11456083","U4WtcZ96X9");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6458663","sql6458663","crV5tnb9Pn");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }

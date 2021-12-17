@@ -22,13 +22,10 @@ public class LoginDao extends AsyncTask<String, Void, User> {
 
             //Connection connection=new DBConnexion().getConnection();
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11456083", "sql11456083", "U4WtcZ96X9");
-
-
+            Connection connection = DriverManager.getConnection("jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6458663","sql6458663","crV5tnb9Pn");
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM user where username=? and password=?");
             statement.setString(1, username);
             statement.setString(2, password);
-
             ResultSet rs = statement.executeQuery();
 
             if (rs.next()) {
@@ -48,4 +45,6 @@ public class LoginDao extends AsyncTask<String, Void, User> {
         return user;
 
     }
+
+
 }
