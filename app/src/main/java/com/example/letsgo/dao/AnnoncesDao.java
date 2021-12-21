@@ -23,7 +23,7 @@ public class AnnoncesDao extends AsyncTask<Integer, Void, Annonce> {
             int id = params[0];
             System.out.println("idddddddd :"+id);
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6458663","sql6458663","crV5tnb9Pn");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://mysql-63048-0.cloudclusters.net:17837/letsgo","admin","edo8wnIO");
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM annonce where id_annonce=?");
             statement.setInt(1,id);
             ResultSet rs = statement.executeQuery();

@@ -4,48 +4,48 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.AsyncTask;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.letsgo.dao.AnnoncesDao;
 import com.example.letsgo.model.Annonce;
-
-import java.util.concurrent.ExecutionException;
+import com.squareup.picasso.Picasso;
 
 public class DetailsAnnonce extends AppCompatActivity {
     TextView title,adresse,description,duree,contact,max_participants,frais;
+    ImageView imageAnnonce;
     Annonce annonce;
-    int annonce_id=1;
-    @SuppressLint("StaticFieldLeak")
+
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        title=findViewById(R.id.textView);
-        adresse=findViewById(R.id.textView2);
-        description = findViewById(R.id.textView4);
-        duree=findViewById(R.id.textView);
-        contact=findViewById(R.id.textView);
-        max_participants=findViewById(R.id.textView5);
-        frais=findViewById(R.id.textView9);
-        contact=findViewById(R.id.textView12);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_annonce);
+        title=(TextView)findViewById(R.id.title);
+        imageAnnonce=(ImageView)findViewById(R.id.imageAnnonce);
+        adresse=findViewById(R.id.adresse);
+        description = findViewById(R.id.description);
+        duree=findViewById(R.id.dureeVoyage);
+        contact=findViewById(R.id.contact);
+        max_participants=findViewById(R.id.availablePlaces);
+        frais=findViewById(R.id.frais);
 
+
+        Log.d("test","details annonce");
         Intent i = getIntent();
-        final Annonce[] annonce = {(Annonce) i.getSerializableExtra("annonce")};
+        final Annonce[] annonce = {(Annonce) i.getSerializableExtra("Annonce")};
 
-//        title.setText(annonce[0].getTitre());
-//        description.setText(annonce[0].getDescription());
-//        duree.setText(annonce[0].getDuree());
-//        contact.setText(annonce[0].getContact());
-//        max_participants.setText(annonce[0].getMax_participants());
-//        frais.setText((int) annonce[0].getFrais());
-//        adresse.setText(annonce[0].getAdresse());
-
-
+        Log.d("titre annonce",annonce[0].getTitre());
+        title.setText(annonce[0].getTitre());
+        description.setText(annonce[0].getDescription());
+        duree.setText(annonce[0].getDuree());
+        contact.setText(annonce[0].getContact());
+        max_participants.setText(Integer.toString(annonce[0].getMax_participants()));
+        frais.setText(Double.toString(annonce[0].getFrais()));
+        adresse.setText(annonce[0].getAdresse());
+        Picasso.with(getApplicationContext()).load(annonce[0].getImages_url()).into(imageAnnonce);
 
 
     }

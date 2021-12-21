@@ -1,21 +1,16 @@
 package com.example.letsgo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 import com.example.letsgo.model.Annonce;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.util.List;
 
 public class CustomListAdapter  extends BaseAdapter {
 
@@ -49,7 +44,7 @@ public class CustomListAdapter  extends BaseAdapter {
         if (convertView == null) {
             convertView = layoutInflater.inflate(R.layout.activity_list_annonces, null);
             holder = new ViewHolder();
-            holder.flagView = (ImageView) convertView.findViewById(R.id.imageView3);
+            holder.flagView = (ImageView) convertView.findViewById(R.id.annonceImageList);
             holder.countryNameView = (TextView) convertView.findViewById(R.id.textView3);
             holder.populationView = (TextView) convertView.findViewById(R.id.textView10);
             convertView.setTag(holder);
@@ -59,7 +54,9 @@ public class CustomListAdapter  extends BaseAdapter {
 
         Annonce annonce = this.listData.get(position);
         holder.countryNameView.setText(annonce.getTitre());
-        holder.populationView.setText("Description: " + annonce.getDescription());
+        holder.populationView.setText(annonce.getDescription());
+        Picasso.with(context).load(annonce.getImages_url()).resize(100,100).into(holder.flagView);
+
 
 //        int imageId = this.getMipmapResIdByName(annonce.getImages_url());
 

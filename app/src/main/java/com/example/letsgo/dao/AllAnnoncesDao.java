@@ -21,7 +21,7 @@ public class AllAnnoncesDao extends AsyncTask<Void, Void, List<Annonce>> {
         List<Annonce> annonces = new ArrayList<Annonce>();
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6458663","sql6458663","crV5tnb9Pn");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://mysql-63048-0.cloudclusters.net:17837/letsgo","admin","edo8wnIO");
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM annonce");
             ResultSet rs = statement.executeQuery();
             while (rs.next()){
@@ -33,7 +33,8 @@ public class AllAnnoncesDao extends AsyncTask<Void, Void, List<Annonce>> {
                 annonce.setDuree(rs.getString("duree"));
                 annonce.setMax_participants(rs.getInt("max_participants"));
                 annonce.setContact(rs.getString("contact"));
-//                annonce.setAdresse(rs.getString("adresse"));
+                annonce.setAdresse(rs.getString("adresse"));
+                annonce.setImages_url(rs.getString("annonceImage"));
                 annonces.add(annonce);
             }
 

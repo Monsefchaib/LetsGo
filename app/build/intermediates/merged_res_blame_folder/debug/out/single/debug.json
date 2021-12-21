@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/build/intermediates/res/merged/debug/layout_details_annonces.xml.flat",
-        "source": "/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/res/layout/details_annonces.xml"
-    },
-    {
         "merged": "/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/build/intermediates/res/merged/debug/layout_activity_show_all_annonces.xml.flat",
         "source": "/Users/Monsef/Documents/LetsGo/LetsGo/LetsGo/app/src/main/res/layout/activity_show_all_annonces.xml"
     },

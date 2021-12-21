@@ -1,6 +1,8 @@
 package com.example.letsgo;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +19,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class ListAnnonces extends AppCompatActivity {
-
+    private Annonce annonce;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +29,21 @@ public class ListAnnonces extends AppCompatActivity {
 
         final ListView listView = (ListView) findViewById(R.id.listView1);
         listView.setAdapter(new CustomListAdapter(this, annonces));
-
+        Intent i = getIntent();
+        annonce = (Annonce)i.getSerializableExtra("annonce");
         // When the user clicks on the ListItem
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
-            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d("test","test");
                 Object o = listView.getItemAtPosition(position);
                 Annonce annonce = (Annonce) o;
-                Toast.makeText(ListAnnonces.this, "Selected :" + " " + annonce, Toast.LENGTH_LONG).show();
-            }
-        });
+//                Toast.makeText(getApplicationContext(), "Selected :" + " " + annonce, Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getApplicationContext(), DetailsAnnonce.class);
+                i.putExtra("Annonce",annonce);
+                startActivity(i);
+            };
+        }) ;
     }
 
     private  List<Annonce> getAnnoncesData() {
