@@ -1923,6 +1923,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adresse
 id age
 id alertTitle
 id aligned
@@ -1931,6 +1932,7 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
+id annonceImageList
 id annonceListView
 id antiClockwise
 id anticipate
@@ -1941,6 +1943,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id availablePlaces
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1957,7 +1960,6 @@ id btnReg
 id button
 id buttonImage
 id buttonLet
-id buttonLets
 id buttonPanel
 id buttonSave
 id buttonT
@@ -1986,6 +1988,7 @@ id closest
 id collapseActionView
 id confirm_button
 id constraint
+id contact
 id container
 id content
 id contentPanel
@@ -2005,6 +2008,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2028,6 +2032,7 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
+id dureeVoyage
 id easeIn
 id easeInOut
 id easeOut
@@ -2058,6 +2063,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frais
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2080,10 +2086,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageAnnonce
 id imageButton
-id imageView
 id imageView2
-id imageView3
 id img
 id immediateStop
 id included
@@ -2306,18 +2311,13 @@ id textTop
 id textView
 id textView10
 id textView11
-id textView12
 id textView13
 id textView14
 id textView15
-id textView2
 id textView3
-id textView4
-id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2462,7 +2462,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout details_annonces
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2587,8 +2586,10 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string contact
 string contacts
 string description
+string duree
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior

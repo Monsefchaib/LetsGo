@@ -2,6 +2,7 @@ package com.example.letsgo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,9 +34,13 @@ public class ShowAllAnnonces extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                Log.d("test","test ana hnaa");
                 Object o = listView.getItemAtPosition(position);
                 Annonce annonce = (Annonce) o;
-                Toast.makeText(ShowAllAnnonces.this, "Selected :" + " " + annonce, Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getApplicationContext(), DetailsAnnonce.class);
+//                Toast.makeText(ShowAllAnnonces.this, "Selected :" + " " + annonce, Toast.LENGTH_LONG).show();
+                i.putExtra("Annonce",annonce);
+                startActivity(i);
             }
         });
     }
